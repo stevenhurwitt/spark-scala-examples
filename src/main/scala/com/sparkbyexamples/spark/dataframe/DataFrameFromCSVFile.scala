@@ -11,7 +11,7 @@ object DataFrameFromCSVFile {
       .appName("SparkByExample")
       .getOrCreate()
 
-    spark.sparkContext.setLogLevel("ERROR")
+    // spark.sparkContext.setLogLevel("ERROR")
 
     //spark read csv file
     val df = spark.read.csv("src/main/resources/zipcodes.csv")
