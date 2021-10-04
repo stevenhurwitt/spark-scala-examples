@@ -4,6 +4,9 @@
 .classpath
 .project
 .settings
+.metals
+.bloop
+.vscode
 *.class
 *.orig
 *.log

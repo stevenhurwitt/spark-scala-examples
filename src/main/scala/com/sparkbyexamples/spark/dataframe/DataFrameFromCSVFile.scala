@@ -7,7 +7,7 @@ object DataFrameFromCSVFile {
   def main(args:Array[String]):Unit= {
 
     val spark: SparkSession = SparkSession.builder()
-      .master("local[1]")
+      .master("spark://192.168.50.7:7077")
       .appName("SparkByExample")
       .getOrCreate()
 
@@ -59,7 +59,7 @@ object DataFrameFromCSVFile {
 
     //Write a csv file
     df_with_schema.write.mode(SaveMode.Overwrite)
-      .csv("c:/tmp/spark_output/zipcodes")
+      .csv("src/spark_output/zipcodes")
 
   }
 }
