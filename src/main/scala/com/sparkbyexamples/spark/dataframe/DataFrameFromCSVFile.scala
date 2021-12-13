@@ -7,7 +7,7 @@ object DataFrameFromCSVFile {
   def main(args:Array[String]):Unit= {
 
     val spark: SparkSession = SparkSession.builder()
-      .master("spark://192.168.50.7:7077")
+      .master("spark://xanaxprincess.com:7077")
       .appName("SparkByExample")
       .getOrCreate()
 
