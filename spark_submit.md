@@ -26,3 +26,15 @@ spark-submit --master yarn \
 --class com.sparkbyexamples.spark.dataframe.DataFrameFromCSVFile \
 ./target/spark-scala-examples-1.0-SNAPSHOT.jar
 ```
+
+```
+spark-submit --master yarn \
+--class com.sparkbyexamples.spark.dataframe.DataFrameFromCSVFile \
+hdfs:///user/ubuntu/jars/spark-scala-examples-1.0-SNAPSHOT.jar
+```
+
+```
+spark-submit --master yarn \
+--class com.sparkbyexamples.spark.SparkSessionTest \
+./target/spark-scala-examples-1.0-SNAPSHOT.jar
+```

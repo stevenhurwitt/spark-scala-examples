@@ -7,14 +7,14 @@ object DataFrameFromCSVFile {
   def main(args:Array[String]):Unit= {
 
     val spark: SparkSession = SparkSession.builder()
-      .master("spark://xanaxprincess.com:7077")
+      .master("spark://xanaxprincess.asuscomm.com:7077")
       .appName("SparkByExample")
       .getOrCreate()
 
     // spark.sparkContext.setLogLevel("ERROR")
 
     //spark read csv file
-    val df = spark.read.csv("src/main/resources/zipcodes.csv")
+    val df = spark.read.csv("resources/zipcodes.csv")
     df.show()
     df.printSchema()
 
